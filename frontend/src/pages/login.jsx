@@ -50,7 +50,7 @@ function Login() {
             <div className="from-conatiner">
                 <form  className="form-Field" onSubmit={handleLogin}> 
                     <h2>Login</h2>
-                    <img className="images" src="/public-images/login-image-2.png" alt="login-image" />
+                    <img className="images" src="public-images/login-image-2.png" alt="login-image" />
                     <input
                         type="email"
                         placeholder="Email"
