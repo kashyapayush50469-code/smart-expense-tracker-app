@@ -24,26 +24,26 @@ function Login() {
         }
     };
 
-    const popup = () => {
-        if (!showPopup) return null;
-        return (
-            <div className="popup">
-                <button
-                    type="button"
-                    className="popup-close"
-                    onClick={() => setShowPopup(false)}
-                >
-                    ✕
-                </button>
+    // const popup = () => {
+    //     if (!showPopup) return null;
+    //     return (
+    //         <div className="popup">
+    //             <button
+    //                 type="button"
+    //                 className="popup-close"
+    //                 onClick={() => setShowPopup(false)}
+    //             >
+    //                 ✕
+    //             </button>
 
-                <strong style={{marginTop:"25px"}}>if you haven't an account.then, you need to create account.go to the register page.after creating an account.then you will able to log in.otherwise, you will get an error
-                    "Invalid email or password."
-                </strong>
-                <p><b>Thank, you!</b></p>
-            </div>
-        );
+    //             <strong style={{marginTop:"25px"}}>if you haven't an account.then, you need to create account.go to the register page.after creating an account.then you will able to log in.otherwise, you will get an error
+    //                 "Invalid email or password."
+    //             </strong>
+    //             <p><b>Thank, you!</b></p>
+    //         </div>
+    //     );
 
-    };
+    // };
 
     return (
         <div>
@@ -67,7 +67,7 @@ function Login() {
                     />
                     <button className="loginbtn" type="submit">Login</button>
                 </form>
-                {popup()}
+                {/* {popup()} */}
                 {error && <p style={{ color: "red" }}>{error}</p>}
                 <p className="account">Don't have an account? <Link to="/register">Register here</Link></p>
             </div>
