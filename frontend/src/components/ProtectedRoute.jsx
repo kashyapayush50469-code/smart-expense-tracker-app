@@ -36,7 +36,7 @@ function ProtectedRoute({ children }) {
     }, []);
 
     if (loading) {
-        return <div>Loading...</div>;
+        return <div style={{marginLeft:"auto",marginRight:"auto", color:"white", marginTop:"200px"}}>Loading...</div>;
     }
 
     if (!authenticated) {
